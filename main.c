@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
 
 // Compund Interest Formula: A = P(1+r/n)^n*t
 
@@ -13,11 +14,15 @@ int main(int argc, char *argv[]) {
     fprintf(stderr, "Invalid Inputs. Enter:\n principal, \nrate(as decimal) \ncompoundFrequency \ntime(years)");
     return 3;
   }
+
+  //TODO: Validate inputs:
+  
   // NULL because strtod (string to double) must ignore any advanced error
   double principal = strtod(argv[1], NULL);
   double rate = strtod(argv[2], NULL);
   double compoundFrequency = strtod(argv[3], NULL);
   double time = strtod(argv[4], NULL); 
 
+  //TODO: Implement actual math
   
 }
